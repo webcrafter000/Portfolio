@@ -53,7 +53,10 @@ export default function Projects() {
           </div>
           <div className="mx-auto mt-16 max-w-5xl text-center text-foreground md:mt-28">
             <span className="text-xl font-bold md:text-2xl">
-              I specialize in building modern full-stack applications with robust backend systems and dynamic frontend interfaces. Continuously exploring new technologies to enhance performance, scalability, and AI integration.
+              I specialize in building modern full-stack applications with
+              robust backend systems and dynamic frontend interfaces.
+              Continuously exploring new technologies to enhance performance,
+              scalability, and AI integration.
             </span>
             <p className="mt-10 text-base md:text-xl">
               Visit my github to see more interesting projects{" "}

@@ -4,23 +4,23 @@ export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
   {
     title: "Full Stack Development Intern",
     organisation: {
-      name: "Vistras"
+      name: "Vistras",
     },
     date: "Jan 2025 – Apr 2025",
     location: "Remote",
     description:
-      "\n• Led development of a supply chain management platform using modern web technologies" +
-      "\n• Engineered real-time dashboards with Chart.js and WebSocket for live data visualization" +
-      "\n• Integrated QR code generation and scanning for inventory tracking and document validation" +
-      "\n• Developed and deployed a Telegram bot for real-time alerts using API triggers" +
-      "\n• Utilized AI-powered APIs for predictive analytics and automated report generation" +
-      "\n• Implemented secure role-based access control with JWT authentication" +
+      "\n• Led development of a supply chain management platform using modern web technologies," +
+      "\n• Engineered real-time dashboards with Chart.js and WebSocket for live data visualization," +
+      "\n• Integrated QR code generation and scanning for inventory tracking and document validation," +
+      "\n• Developed and deployed a Telegram bot for real-time alerts using API triggers," +
+      "\n• Utilized AI-powered APIs for predictive analytics and automated report generation," +
+      "\n• Implemented secure role-based access control with JWT authentication," +
       "\n• Optimized backend performance with advanced caching strategies and query tuning, achieving a 30% efficiency boost",
   },
   {
     title: "Web Development Intern",
     organisation: {
-      name: "Datavalley"
+      name: "Datavalley",
     },
     date: "May 2024 – June 2024",
     location: "Remote",

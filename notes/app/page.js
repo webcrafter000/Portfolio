@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Button } from "@/components/ui/button";
 import { api } from "@/convex/_generated/api";
 import { UserButton, useUser } from "@clerk/nextjs";
@@ -9,13 +9,10 @@ import HomePageHeader from "./_component/HomePageHeader";
 import Hero from "./_component/Hero";
 
 export default function Home() {
-
- 
   return (
     <div>
-      <HomePageHeader/>
-      <Hero/>
+      <HomePageHeader />
+      <Hero />
     </div>
-    
-  )
+  );
 }

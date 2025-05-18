@@ -7,45 +7,45 @@ import { v } from "convex/values";
 
 export const ingest = action({
   args: {
-    splitText:v.any(),
-    fileId:v.string()
+    splitText: v.any(),
+    fileId: v.string(),
   },
-  handler: async (ctx,args) => {
+  handler: async (ctx, args) => {
     await ConvexVectorStore.fromTexts(
-      args.splitText,// Array
-      {fileId:args.fileId},//String
+      args.splitText, // Array
+      { fileId: args.fileId }, //String
       new GoogleGenerativeAIEmbeddings({
-        apiKey:'AIzaSyBkc1gF3iUPo9rNh_ak0YblKvW75s1wgIY',
+        apiKey: "AIzaSyBkc1gF3iUPo9rNh_ak0YblKvW75s1wgIY",
         model: "text-embedding-004", // 768 dimensions
         taskType: TaskType.RETRIEVAL_DOCUMENT,
         title: "Document title",
       }),
-      { ctx }
-
+      { ctx },
     );
-    return "Completed.."
-
+    return "Completed..";
   },
 });
 
 export const search = action({
   args: {
     query: v.string(),
-    fileId:v.string()
+    fileId: v.string(),
   },
   handler: async (ctx, args) => {
     const vectorStore = new ConvexVectorStore(
       new GoogleGenerativeAIEmbeddings({
-        apiKey:'AIzaSyB4V0an8lNGZ8CH2dlZTFn8Zqwbx-8uWs4',
+        apiKey: "AIzaSyB4V0an8lNGZ8CH2dlZTFn8Zqwbx-8uWs4",
         model: "gemini-1.5-flash-8b", // 768 dimensions
         taskType: TaskType.RETRIEVAL_DOCUMENT,
         title: "Document title",
       }),
-       { ctx });
-      console.log(args.fileId)
-    const resultOne = await (await vectorStore.similaritySearch(args.query, 1))
-    .filter(q=>q.metadata.fileId==args.fileId)
-    
+      { ctx },
+    );
+    console.log(args.fileId);
+    const resultOne = await (
+      await vectorStore.similaritySearch(args.query, 1)
+    ).filter((q) => q.metadata.fileId == args.fileId);
+
     console.log(resultOne);
 
     return JSON.stringify(resultOne);

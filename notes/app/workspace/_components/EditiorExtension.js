@@ -1,8 +1,8 @@
-import { chatSession } from '@/configs/AIModel';
-import { api } from '@/convex/_generated/api';
-import { useUser } from '@clerk/nextjs';
-import { ListBulletIcon } from '@radix-ui/react-icons';
-import { useAction, useMutation } from 'convex/react';
+import { chatSession } from "@/configs/AIModel";
+import { api } from "@/convex/_generated/api";
+import { useUser } from "@clerk/nextjs";
+import { ListBulletIcon } from "@radix-ui/react-icons";
+import { useAction, useMutation } from "convex/react";
 import {
   AlignCenter,
   AlignLeft,
@@ -21,13 +21,13 @@ import {
   Strikethrough,
   TextQuote,
   Underline,
-} from 'lucide-react';
-import { useParams } from 'next/navigation';
-import React, { useContext, useEffect } from 'react';
-import { toast } from 'sonner';
-import { saveAs } from 'file-saver';
-import htmlDocx from 'html-docx-js/dist/html-docx';
-import { FileSaveContext } from '@/app/_context/FileSaveContext';
+} from "lucide-react";
+import { useParams } from "next/navigation";
+import React, { useContext, useEffect } from "react";
+import { toast } from "sonner";
+import { saveAs } from "file-saver";
+import htmlDocx from "html-docx-js/dist/html-docx";
+import { FileSaveContext } from "@/app/_context/FileSaveContext";
 
 function EditiorExtension({ editor }) {
   const { fileId } = useParams();
@@ -42,7 +42,7 @@ function EditiorExtension({ editor }) {
     const selectedText = editor.state.doc.textBetween(
       editor.state.selection.from,
       editor.state.selection.to,
-      ' '
+      " ",
     );
 
     console.log("Selected text:", selectedText);
@@ -53,7 +53,7 @@ function EditiorExtension({ editor }) {
     });
 
     const UnformattedAns = JSON.parse(result);
-    let AllUnformattedAns = '';
+    let AllUnformattedAns = "";
 
     UnformattedAns?.forEach((item) => {
       AllUnformattedAns += item.pageContent;
@@ -76,10 +76,14 @@ function EditiorExtension({ editor }) {
 
     const AiModelResult = await chatSession.sendMessage(PROMPT);
     const RawResponse = await AiModelResult.response.text();
-    const FinalAns = RawResponse.replace(/```/g, '').replace(/html/g, '').trim();
+    const FinalAns = RawResponse.replace(/```/g, "")
+      .replace(/html/g, "")
+      .trim();
 
     const AllText = editor.getHTML();
-    editor.commands.setContent(AllText + '<p><strong>Answer:</strong> ' + FinalAns + '</p>');
+    editor.commands.setContent(
+      AllText + "<p><strong>Answer:</strong> " + FinalAns + "</p>",
+    );
 
     saveNotes({
       notes: editor.getHTML(),
@@ -100,7 +104,7 @@ function EditiorExtension({ editor }) {
       </html>
     `;
     let converted = htmlDocx.asBlob(htmlString);
-    saveAs(converted, 'document.docx');
+    saveAs(converted, "document.docx");
   };
 
   useEffect(() => {
@@ -110,7 +114,7 @@ function EditiorExtension({ editor }) {
         fileId: fileId,
         createdBy: user?.primaryEmailAddress?.emailAddress,
       });
-      toast('File Saved');
+      toast("File Saved");
     }
   }, [fileSave, editor]);
 
@@ -120,96 +124,116 @@ function EditiorExtension({ editor }) {
 
   return (
     editor && (
-      <div className='p-5'>
+      <div className="p-5">
         <div className="control-group">
           <div className="button-group flex gap-3">
             <button
-              onClick={() => editor.chain().focus().toggleHeading({ level: 1 }).run()}
-              className={editor.isActive('heading', { level: 1 }) ? 'text-blue-500' : ''}
+              onClick={() =>
+                editor.chain().focus().toggleHeading({ level: 1 }).run()
+              }
+              className={
+                editor.isActive("heading", { level: 1 }) ? "text-blue-500" : ""
+              }
             >
               <Heading1 />
             </button>
             <button
-              onClick={() => editor.chain().focus().toggleHeading({ level: 2 }).run()}
-              className={editor.isActive('heading', { level: 2 }) ? 'text-blue-500' : ''}
+              onClick={() =>
+                editor.chain().focus().toggleHeading({ level: 2 }).run()
+              }
+              className={
+                editor.isActive("heading", { level: 2 }) ? "text-blue-500" : ""
+              }
             >
               <Heading2 />
             </button>
             <button
-              onClick={() => editor.chain().focus().toggleHeading({ level: 3 }).run()}
-              className={editor.isActive('heading', { level: 3 }) ? 'text-blue-500' : ''}
+              onClick={() =>
+                editor.chain().focus().toggleHeading({ level: 3 }).run()
+              }
+              className={
+                editor.isActive("heading", { level: 3 }) ? "text-blue-500" : ""
+              }
             >
               <Heading3 />
             </button>
             <button
               onClick={() => editor.chain().focus().toggleBold().run()}
-              className={editor.isActive('bold') ? 'text-blue-500' : ''}
+              className={editor.isActive("bold") ? "text-blue-500" : ""}
             >
               <Bold />
             </button>
             <button
               onClick={() => editor.chain().focus().toggleItalic().run()}
-              className={editor.isActive('italic') ? 'text-blue-500' : ''}
+              className={editor.isActive("italic") ? "text-blue-500" : ""}
             >
               <Italic />
             </button>
             <button
               onClick={() => editor.chain().focus().toggleUnderline().run()}
-              className={editor.isActive('underline') ? 'text-blue-500' : ''}
+              className={editor.isActive("underline") ? "text-blue-500" : ""}
             >
               <Underline />
             </button>
             <button
               onClick={() => editor.chain().focus().toggleCode().run()}
-              className={editor.isActive('code') ? 'text-blue-500' : ''}
+              className={editor.isActive("code") ? "text-blue-500" : ""}
             >
               <Code />
             </button>
             <button
               onClick={() => editor.chain().focus().toggleBulletList().run()}
-              className={editor.isActive('bulletList') ? 'text-blue-500' : ''}
+              className={editor.isActive("bulletList") ? "text-blue-500" : ""}
             >
               <List />
             </button>
             <button
               onClick={() => editor.chain().focus().toggleBlockquote().run()}
-              className={editor.isActive('blockquote') ? 'text-blue-500' : ''}
+              className={editor.isActive("blockquote") ? "text-blue-500" : ""}
             >
               <TextQuote />
             </button>
             <button
               onClick={() => editor.chain().focus()?.toggleHighlight().run()}
-              className={editor.isActive('highlight') ? 'text-blue-500' : ''}
+              className={editor.isActive("highlight") ? "text-blue-500" : ""}
             >
               <Highlighter />
             </button>
             <button
               onClick={() => editor.chain().focus().toggleStrike().run()}
-              className={editor.isActive('strike') ? 'text-blue-500' : ''}
+              className={editor.isActive("strike") ? "text-blue-500" : ""}
             >
               <Strikethrough />
             </button>
             <button
-              onClick={() => editor.chain().focus().setTextAlign('left').run()}
-              className={editor.isActive({ textAlign: 'left' }) ? 'text-blue-500' : ''}
+              onClick={() => editor.chain().focus().setTextAlign("left").run()}
+              className={
+                editor.isActive({ textAlign: "left" }) ? "text-blue-500" : ""
+              }
             >
               <AlignLeft />
             </button>
             <button
-              onClick={() => editor.chain().focus().setTextAlign('center').run()}
-              className={editor.isActive({ textAlign: 'center' }) ? 'text-blue-500' : ''}
+              onClick={() =>
+                editor.chain().focus().setTextAlign("center").run()
+              }
+              className={
+                editor.isActive({ textAlign: "center" }) ? "text-blue-500" : ""
+              }
             >
               <AlignCenter />
             </button>
             <button
-              onClick={() => editor.chain().focus().setTextAlign('right').run()}
-              className={editor.isActive({ textAlign: 'right' }) ? 'text-blue-500' : ''}
+              onClick={() => editor.chain().focus().setTextAlign("right").run()}
+              className={
+                editor.isActive({ textAlign: "right" }) ? "text-blue-500" : ""
+              }
             >
               <AlignRight />
             </button>
             <button
               onClick={() => onAiClick()}
-              className={'hover:text-blue-500'}
+              className={"hover:text-blue-500"}
             >
               <Sparkles />
             </button>

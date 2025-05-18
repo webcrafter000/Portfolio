@@ -13,9 +13,9 @@ export default defineSchema({
     email: v.string(),
     imageUrl: v.string(),
     userName: v.string(),
-    upgrade:v.boolean()
+    upgrade: v.boolean(),
   }),
-  
+
   documents: defineTable({
     embedding: v.array(v.number()),
     text: v.string(),
@@ -25,10 +25,9 @@ export default defineSchema({
     dimensions: 768,
   }),
 
-  notes:defineTable({
-    fileId:v.string(),
-    notes:v.any(),
-    createdBy:v.string()
-  })
-
+  notes: defineTable({
+    fileId: v.string(),
+    notes: v.any(),
+    createdBy: v.string(),
+  }),
 });
