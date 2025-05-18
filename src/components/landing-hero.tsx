@@ -46,16 +46,18 @@ export default function LandingHero() {
               </span>
             </FadeUp>
             <FadeUp key="description" duration={0.6} delay={0.2}>
-              <div className="mt-8 max-w-3xl text-base font-semibold text-zinc-900 dark:text-zinc-200 sm:text-base md:text-xl">
-                I am a software developer specializing in building
-                high-performance, user-focused web applications. Skilled in{" "}
-                <span className="font-semibold text-accent">ReactJS</span>,{" "}
-                <span className="font-semibold text-accent">NextJS</span>, and
-                expert in{" "}
-                <span className="font-semibold text-accent">JavaScript</span>,{" "}
-                <span className="font-semibold text-accent">HTML</span> and{" "}
-                <span className="font-semibold text-accent">CSS</span>
-              </div>
+            <div className="mt-8 max-w-3xl text-base font-semibold text-zinc-900 dark:text-zinc-200 sm:text-base md:text-xl">
+I'm a full-stack web developer specializing in scalable architectures, real-time systems, and AI-powered solutions using LLMs and Python-based integrations. Skilled in{" "}
+  <span className="font-semibold text-accent">React.js</span>,{" "}
+  <span className="font-semibold text-accent">Next.js</span>,{" "}
+  <span className="font-semibold text-accent">TypeScript</span>,{" "}
+  and proficient in{" "}
+  <span className="font-semibold text-accent">Node.js</span>,{" "}
+  <span className="font-semibold text-accent">Tailwind CSS</span>,{" "}
+  <span className="font-semibold text-accent">JavaScript</span>, and{" "}
+  <span className="font-semibold text-accent">Python</span>.
+</div>
+
             </FadeUp>
           </AnimatePresence>
         </div>

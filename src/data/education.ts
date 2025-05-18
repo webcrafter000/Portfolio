@@ -10,7 +10,7 @@ export const EDUCATION: ExperienceShowcaseListItemProps[] = [
     date: "2021-2025",
     location: "Vizianagaram, India",
     description:
-      "Relevant courses included Data Structures and Algorithms, Web Design, Cloud Computing, Artificial Neural Network and Database Management.",
+      "Completed in-depth coursework in Data Structures & Algorithms, Full Stack Web Development, Cloud Computing, Artificial Intelligence, and Database Systems. Focused on building scalable applications and exploring AI-driven solutions with practical, project-based learning.",
   },
   {
     title: "Higher Secondary School",

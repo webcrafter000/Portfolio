@@ -41,7 +41,7 @@ export interface ExperienceShowcaseListItemProps {
   title: string;
   organisation: {
     name: string;
-    href: string;
+    href?: string;
   };
   date: string;
   location: string;
@@ -65,14 +65,18 @@ export default function ExperienceShowcaseListItem(
       >
         <h3 className="text-base font-bold text-foreground sm:text-xl md:text-2xl">
           {props.title}{" "}
-          <Link
-            href={props.organisation.href}
-            className="cursor-pointer text-accent"
-            target="_blank"
-            rel="nofollow"
-          >
-            @{props.organisation.name}
-          </Link>
+          {props.organisation.href ? (
+            <Link
+              href={props.organisation.href}
+              className="cursor-pointer text-accent"
+              target="_blank"
+              rel="nofollow"
+            >
+              @{props.organisation.name}
+            </Link>
+          ) : (
+            <span className="text-accent">@{props.organisation.name}</span>
+          )}
         </h3>
         <span className="text-sm font-medium text-foreground xs:text-base">
           {props.date} | {props.location}
