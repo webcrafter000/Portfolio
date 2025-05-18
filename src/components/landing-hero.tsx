@@ -56,8 +56,8 @@ export default function LandingHero() {
                 and proficient in{" "}
                 <span className="font-semibold text-accent">Node.js</span>,{" "}
                 <span className="font-semibold text-accent">Tailwind CSS</span>,{" "}
-                <span className="font-semibold text-accent">JavaScript</span>, and
-                <span className="font-semibold text-accent">Python</span>.
+                <span className="font-semibold text-accent">JavaScript</span>,
+                and <span className="font-semibold text-accent">Python</span>.
               </div>
             </FadeUp>
           </AnimatePresence>
