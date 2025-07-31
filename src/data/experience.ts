@@ -6,7 +6,7 @@ export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
     organisation: {
       name: "Vistras",
     },
-    date: "Jan 2025 – Jun 2025",
+    date: "Jan 2025 – July 2025",
     location: "Remote",
     description:
       "\n• Led development of a supply chain management platform using modern web technologies," +
