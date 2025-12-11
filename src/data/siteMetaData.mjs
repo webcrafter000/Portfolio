@@ -11,7 +11,7 @@ export const siteMetadata = {
   siteLogo: "/favicon.ico",
   image: "/static/homepage.png",
   socialBanner: "/static/homepage.png",
-  email: "webenthusiast2024@gmail.com",
+  email: "nalamnagendra1611@@gmail.com",
   github: "https://github.com/webcrafter000",
   linkedin: "https://www.linkedin.com/in/nagendra1611",
   locale: "en-US",
