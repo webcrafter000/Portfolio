@@ -13,5 +13,5 @@ export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
       "• Designed real-time dashboard using Chart.js and WebSockets that improved operational visibility for 50+ users.\n" +
       "• Integrated Gemini API for predictive analytics, increasing reporting accuracy from 75% to 92%.\n" +
       "• Optimized backend performance by 30% through Redis caching implementation and RBAC architecture.",
-  }
+  },
 ];
