@@ -3,8 +3,32 @@ import {
   SiSocketdotio,
   SiPrisma,
   SiNextdotjs,
+  SiFlask,
+  SiFastapi,
+  SiMysql,
+  SiCloudflare,
+  SiAmazonaws,
+  SiGooglecloud,
+  SiVercel,
+  SiGithubactions,
+  SiLinux,
+  SiRedis,
+  SiSupabase,
+  SiJest,
+  SiVitest,
+  SiPlaywright,
+  SiChakraui,
+  SiMui,
 } from "react-icons/si";
-import { FramerMotionIcon, ReactRouterDomIcon } from "@/components/icons";
+import {
+  Bot,
+  Cpu,
+  Database,
+} from "lucide-react";
+import {
+  FramerMotionIcon,
+  ReactRouterDomIcon,
+} from "@/components/icons";
 import { type SkillsShowcaseProps } from "@/components/skills/skills-showcase";
 
 // Languages
@@ -56,6 +80,10 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         name: "Python",
         icon: PythonSvg,
       },
+      {
+        name: "MySQL",
+        icon: SiMysql,
+      },
     ],
   },
   {
@@ -69,32 +97,38 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         name: "Nextjs",
         icon: SiNextdotjs,
       },
-
       {
-        name: "React Router Dom",
-        icon: ReactRouterDomIcon,
+        name: "FastAPI",
+        icon: SiFastapi,
       },
       {
-        name: "Redux",
-        icon: ReduxSvg,
+        name: "Flask",
+        icon: SiFlask,
       },
       {
         name: "Tailwind CSS",
         icon: TailwindcssSvg,
       },
-
+      {
+        name: "Material UI",
+        icon: SiMui,
+      },
+      {
+        name: "Chakra UI",
+        icon: SiChakraui,
+      },
       {
         name: "Framer motion",
         icon: FramerMotionIcon,
       },
       {
-        name: "Vite",
-        icon: ViteSvg,
+        name: "Redux",
+        icon: ReduxSvg,
       },
     ],
   },
   {
-    sectionName: "Backend",
+    sectionName: "Backend & AI",
     skills: [
       {
         name: "Nodejs",
@@ -108,40 +142,100 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         name: "Socket.io",
         icon: SiSocketdotio,
       },
+      {
+        name: "LLM Integration",
+        icon: Bot,
+      },
+      {
+        name: "RAG Pipelines",
+        icon: Cpu,
+      },
     ],
   },
   {
-    sectionName: "Databases and ORMs",
+    sectionName: "Databases & ORMs",
     skills: [
+      {
+        name: "PostgreSQL",
+        icon: PostgressSvg,
+      },
       {
         name: "MongoDB",
         icon: MongoDBSvg,
       },
       {
-        name: "Postgress",
-        icon: PostgressSvg,
+        name: "Redis",
+        icon: SiRedis,
       },
       {
         name: "Prisma",
         icon: SiPrisma,
       },
+      {
+        name: "Drizzle ORM",
+        icon: Database,
+      },
+      {
+        name: "Supabase",
+        icon: SiSupabase,
+      },
     ],
   },
   {
-    sectionName: "Tools and Technologies",
+    sectionName: "DevOps & Cloud",
+    skills: [
+      {
+        name: "AWS",
+        icon: SiAmazonaws,
+      },
+      {
+        name: "GCP",
+        icon: SiGooglecloud,
+      },
+      {
+        name: "Docker",
+        icon: DockerSvg,
+      },
+      {
+        name: "Cloudflare R2",
+        icon: SiCloudflare,
+      },
+      {
+        name: "GitHub Actions",
+        icon: SiGithubactions,
+      },
+      {
+        name: "Vercel",
+        icon: SiVercel,
+      },
+      {
+        name: "Linux",
+        icon: SiLinux,
+      },
+    ],
+  },
+  {
+    sectionName: "Tools & Testing",
     skills: [
       {
         name: "Git",
         icon: GitSvg,
       },
       {
-        name: "Docker",
-        icon: DockerSvg,
-      },
-
-      {
         name: "Postman",
         icon: PostmanSvg,
+      },
+      {
+        name: "Jest",
+        icon: SiJest,
+      },
+      {
+        name: "Vitest",
+        icon: SiVitest,
+      },
+      {
+        name: "Playwright",
+        icon: SiPlaywright,
       },
     ],
   },

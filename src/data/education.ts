@@ -4,13 +4,14 @@ export const EDUCATION: ExperienceShowcaseListItemProps[] = [
   {
     title: "Bachelor Of Technology in Information Technology",
     organisation: {
-      name: "JNTU-GV,College of Engineering",
+      name: "JNTU-GV, College of Engineering",
       href: "https://jntugvcev.edu.in/",
     },
-    date: "2021-2025",
+    date: "Dec 2021 – May 2025",
     location: "Vizianagaram, India",
     description:
-      "Completed in-depth coursework in Data Structures & Algorithms, Full Stack Web Development, Cloud Computing, Artificial Intelligence, and Database Systems. Focused on building scalable applications and exploring AI-driven solutions with practical, project-based learning.",
+      "• Focused on applying core computer science principles to engineer scalable web applications, effectively bridging the gap between theoretical concepts and production-grade software.\n" +
+      "• Extensively studied modular LLM architectures, clean API design patterns, and advanced database optimization techniques.",
   },
   {
     title: "Higher Secondary School",
@@ -21,7 +22,8 @@ export const EDUCATION: ExperienceShowcaseListItemProps[] = [
     date: "2019-2021",
     location: "Visakhapatnam, India",
     description:
-      "Completed the course in Mathematical  Science with 98%. Started freelancing and got interested in web development",
+      "• Completed an intensive course in Mathematical Science with a 98% score, ranking in the top 0.1% of the Andhra Pradesh Board.\n" +
+      "• During this period, I began exploring professional software engineering and discovered a deep-seated passion for building complex, web-scale applications.",
   },
   {
     title: "Secondary School Education",
@@ -30,8 +32,9 @@ export const EDUCATION: ExperienceShowcaseListItemProps[] = [
       href: "https://srichaitanya.net/",
     },
     date: "2018-2019",
-    location: "Payakarao Peta,India",
+    location: "Payakarao Peta, India",
     description:
-      "Learned good values,dedication and disciplne. Participated  and won in several quiz competetitons",
+      "• Developed a strong foundation in core values, dedication, and academic discipline.\n" +
+      "• Actively participated in and won several competitive quiz competitions, fostering a collaborative and growth-oriented mindset.",
   },
 ];

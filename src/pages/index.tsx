@@ -13,14 +13,14 @@ export default function Home() {
   return (
     <>
       <NextSeo
-        title="Nalam Nagendra | Software Developer"
-        description="Explore the professional portfolio of Nalam Nagendra, a skilled Software Developer with 2 years of hands-on experience. Discover innovative projects, expertise in modern web technologies, and a passion for creating seamless user experiences."
+        title="Nalam Nagendra | Full Stack Engineer"
+        description="Explore the professional portfolio of Nalam Nagendra, a skilled Full Stack Engineer specializing in scalable distributed systems and AI-powered solutions. Discover innovative projects, expertise in modern web technologies, and a passion for creating seamless user experiences."
         canonical={siteMetadata.siteUrl}
         openGraph={{
           url: siteMetadata.siteUrl,
-          title: "Nalam Nagendra- Software Developer",
+          title: "Nalam Nagendra - Full Stack Engineer",
           description:
-            "Dive into the world of web development with Nalam Nagendra. Discover a Software Developer with 2 years of expertise, showcasing cutting-edge projects and a commitment to crafting exceptional user interfaces.",
+            "Dive into the world of web development with Nalam Nagendra. Discover a Full Stack Engineer showcasing cutting-edge projects and a commitment to crafting exceptional user interfaces.",
           images: [
             {
               url: `${siteMetadata.siteUrl}`,

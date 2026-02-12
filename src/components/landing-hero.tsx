@@ -42,22 +42,24 @@ export default function LandingHero() {
                 Nalam Nagendra
               </h1>
               <span className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 md:text-3xl">
-                Software Developer
+                Full Stack Engineer
               </span>
             </FadeUp>
             <FadeUp key="description" duration={0.6} delay={0.2}>
               <div className="mt-8 max-w-3xl text-base font-semibold text-zinc-900 dark:text-zinc-200 sm:text-base md:text-xl">
-                I&#39;m a full-stack web developer specializing in scalable
-                architectures, real-time systems, and AI-powered solutions using
-                LLMs and Python-based integrations. Skilled in{" "}
+                I&#39;m a Full Stack Engineer specializing in scalable
+                distributed systems and AI-native architectures. Experienced in
+                shipping real-world, data-driven products from prototype to
+                production, with proven impact in both startup and enterprise
+                settings. Skilled in{" "}
                 <span className="font-semibold text-accent">React.js</span>,{" "}
                 <span className="font-semibold text-accent">Next.js</span>,{" "}
                 <span className="font-semibold text-accent">TypeScript</span>,{" "}
                 and proficient in{" "}
                 <span className="font-semibold text-accent">Node.js</span>,{" "}
-                <span className="font-semibold text-accent">Tailwind CSS</span>,{" "}
-                <span className="font-semibold text-accent">JavaScript</span>,
-                and <span className="font-semibold text-accent">Python</span>.
+                <span className="font-semibold text-accent">Python</span>,{" "}
+                <span className="font-semibold text-accent">AI & LLM</span>,
+                and <span className="font-semibold text-accent">Cloud</span>.
               </div>
             </FadeUp>
           </AnimatePresence>
