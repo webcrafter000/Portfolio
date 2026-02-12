@@ -20,15 +20,8 @@ import {
   SiChakraui,
   SiMui,
 } from "react-icons/si";
-import {
-  Bot,
-  Cpu,
-  Database,
-} from "lucide-react";
-import {
-  FramerMotionIcon,
-  ReactRouterDomIcon,
-} from "@/components/icons";
+import { Bot, Cpu, Database } from "lucide-react";
+import { FramerMotionIcon } from "@/components/icons";
 import { type SkillsShowcaseProps } from "@/components/skills/skills-showcase";
 
 // Languages
@@ -42,7 +35,6 @@ import PythonSvg from "@/public/icons/python.svg";
 import ReactjsSvg from "@/public/icons/reactjs.svg";
 import ReduxSvg from "@/public/icons/redux.svg";
 import TailwindcssSvg from "@/public/icons/tailwindcss.svg";
-import ViteSvg from "@/public/icons/vite.svg";
 
 // Backend
 import NodejsSvg from "@/public/icons/nodejs.svg";

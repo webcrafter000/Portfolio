@@ -52,10 +52,22 @@ export default function AboutHero() {
             <div className="mt-8 text-left">
               <h2 className="text-xl font-bold text-accent">Key Achievements</h2>
               <ul className="mt-4 list-disc pl-5 text-base font-medium text-zinc-900 dark:text-zinc-300 sm:text-lg">
-                <li>Built and pitched MVPs in 24–48 hours during hackathons, rapidly validating user flows.</li>
-                <li>Solved 150+ LeetCode problems (85% medium/hard) with focus on algorithm efficiency.</li>
-                <li>Published 5+ technical articles on GeeksforGeeks reaching 2,000+ developers.</li>
-                <li>Ranked in top 0.1% in Andhra Pradesh Higher Secondary Board examination.</li>
+                <li>
+                  Built and pitched MVPs in 24–48 hours during hackathons,
+                  rapidly validating user flows.
+                </li>
+                <li>
+                  Solved 150+ LeetCode problems (85% medium/hard) with focus on
+                  algorithm efficiency.
+                </li>
+                <li>
+                  Published 5+ technical articles on GeeksforGeeks reaching
+                  2,000+ developers.
+                </li>
+                <li>
+                  Ranked in top 0.1% in Andhra Pradesh Higher Secondary Board
+                  examination.
+                </li>
               </ul>
             </div>
           </FadeUp>

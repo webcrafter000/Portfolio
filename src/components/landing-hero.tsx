@@ -58,8 +58,8 @@ export default function LandingHero() {
                 and proficient in{" "}
                 <span className="font-semibold text-accent">Node.js</span>,{" "}
                 <span className="font-semibold text-accent">Python</span>,{" "}
-                <span className="font-semibold text-accent">AI & LLM</span>,
-                and <span className="font-semibold text-accent">Cloud</span>.
+                <span className="font-semibold text-accent">AI & LLM</span>, and{" "}
+                <span className="font-semibold text-accent">Cloud</span>.
               </div>
             </FadeUp>
           </AnimatePresence>
