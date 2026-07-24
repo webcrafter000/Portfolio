@@ -41,25 +41,50 @@ export default function LandingHero() {
               <h1 className="bg-accent bg-clip-text py-2 text-5xl font-bold text-transparent sm:text-6xl md:text-7xl xl:text-8xl">
                 Nalam Nagendra
               </h1>
+
               <span className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 md:text-3xl">
-                Full Stack Engineer
+                Full Stack Engineer • AI Engineer
               </span>
             </FadeUp>
+
             <FadeUp key="description" duration={0.6} delay={0.2}>
-              <div className="mt-8 max-w-3xl text-base font-semibold text-zinc-900 dark:text-zinc-200 sm:text-base md:text-xl">
-                I&#39;m a Full Stack Engineer specializing in scalable
-                distributed systems and AI-native architectures. Experienced in
-                shipping real-world, data-driven products from prototype to
-                production, with proven impact in both startup and enterprise
-                settings. Skilled in{" "}
-                <span className="font-semibold text-accent">React.js</span>,{" "}
+              <div className="mt-8 max-w-4xl text-base font-semibold leading-relaxed text-zinc-900 dark:text-zinc-200 sm:text-lg md:text-xl">
+                Full Stack Engineer with{" "}
+                <span className="font-semibold text-accent">
+                  1.5+ years of experience
+                </span>{" "}
+                building scalable web applications, AI-powered platforms, and
+                distributed backend systems. I specialize in architecting
+                production-ready solutions using{" "}
+                <span className="font-semibold text-accent">React</span>,{" "}
                 <span className="font-semibold text-accent">Next.js</span>,{" "}
-                <span className="font-semibold text-accent">TypeScript</span>,{" "}
-                and proficient in{" "}
                 <span className="font-semibold text-accent">Node.js</span>,{" "}
-                <span className="font-semibold text-accent">Python</span>,{" "}
-                <span className="font-semibold text-accent">AI & LLM</span>, and{" "}
-                <span className="font-semibold text-accent">Cloud</span>.
+                <span className="font-semibold text-accent">TypeScript</span>,
+                and{" "}
+                <span className="font-semibold text-accent">Python</span>.
+
+                <br />
+                <br />
+
+                Experienced in developing{" "}
+                <span className="font-semibold text-accent">
+                  AI/LLM applications
+                </span>
+                ,{" "}
+                <span className="font-semibold text-accent">
+                  RAG pipelines
+                </span>
+                , workflow automations, and cloud-native architectures with{" "}
+                <span className="font-semibold text-accent">
+                  AWS, Docker, PostgreSQL, Redis,
+                </span>{" "}
+                and{" "}
+                <span className="font-semibold text-accent">
+                  Cloudflare R2
+                </span>
+                . Passionate about building secure, high-performance products
+                that solve real-world problems and scale from prototype to
+                production.
               </div>
             </FadeUp>
           </AnimatePresence>

@@ -8,11 +8,12 @@ export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
     },
     date: "Sep 2025 – Present",
     location: "Remote",
-    description:
-      "• Architected a property insights platform using React and Node.js, automating data discovery across multiple APIs and reducing research time by 80%.\n" +
-      "• Engineered an asynchronous WhatsApp ingestion pipeline with backend state machines to automate field asset categorization via Twilio.\n" +
-      "• Developed high-performance Python data pipelines with custom caching to ensure 100% reliability for market yields and price trends.\n" +
-      "• Optimized infrastructure using Cloudflare R2 and PostgreSQL indexing, reducing database load and operational storage costs by 45%.",
+description:
+  "• Built a property insights and LMS platform with multi-source search across 25+ property data APIs, WhatsApp ingestion via state machines, and Stripe subscription management.\n" +
+  "• Designed a production-ready RAG chatbot with hybrid retrieval, tier-based access, real-time streaming, and automated quality testing, achieving sub-2s response latency.\n" +
+  "• Developed a full-featured LMS with video streaming, gamification (badges and leaderboards), and tiered course access, increasing student retention and monthly active users by 35%.\n" +
+  "• Optimized infrastructure using Cloudflare R2, PostgreSQL indexing, and Redis caching, reducing storage costs by 45% while maintaining 100% data accuracy.\n" +
+  "• Implemented CI/CD pipelines with GitHub Actions and end-to-end testing using Playwright, ensuring zero regressions across 50+ production deployments.",
   },
   {
     title: "Full Stack Developer (Remote)",
@@ -22,9 +23,9 @@ export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
     date: "Jan 2025 – Aug 2025",
     location: "Remote",
     description:
-      "• Built a robust supply chain platform with QR-based tracking, cutting manual tracking efforts by 45%.\n" +
-      "• Designed a real-time dashboard using Chart.js and WebSockets that improved operational visibility for over 50 users.\n" +
-      "• Integrated the Gemini API for predictive analytics, increasing reporting accuracy from 75% to 92%.\n" +
-      "• Optimized backend performance by 30% through strategic Redis caching implementation and a granular RBAC architecture.",
+  "• Built a QR-based supply chain platform that reduced manual tracking efforts by 45%, featuring real-time dashboards powered by WebSockets and Chart.js for operational monitoring.\n" +
+  "• Engineered a multi-tenant MongoDB architecture with JWT-based tenant routing, handling over 2,000 daily API requests across multiple tenants.\n" +
+  "• Integrated the Gemini API for predictive analytics, improving reporting accuracy from 75% to 92%, and developed a Telegram alert engine for real-time sensor notifications.\n" +
+  "• Optimized backend performance by 30% using Redis caching and RBAC while designing a local RAG pipeline with LangChain and FAISS for intelligent document querying.",
   },
 ];
