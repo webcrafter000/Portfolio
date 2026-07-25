@@ -9,8 +9,6 @@ export const EDUCATION: ExperienceShowcaseListItemProps[] = [
     },
     date: "Dec 2021 – May 2025",
     location: "Vizianagaram, India",
-    description:
-      "• Deployed 5+ full-stack applications serving real users, with source code on GitHub.\n" +
-      "• Mastered Database Design, Web Development, System Design, and AI/ML fundamentals",
-  }
+    description: "",
+  },
 ];
