@@ -43,7 +43,7 @@ export default function LandingHero() {
               </h1>
 
               <span className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 md:text-3xl">
-                AI native Full Stack Developer
+                Full Stack Developer
               </span>
             </FadeUp>
 
@@ -53,31 +53,23 @@ export default function LandingHero() {
                 <span className="font-semibold text-accent">
                   1.5+ years of experience
                 </span>{" "}
-                building scalable web applications, AI-powered platforms, and
-                distributed backend systems. I specialize in architecting
-                production-ready solutions using{" "}
+                building scalable web applications,{" "}
+                <span className="font-semibold text-accent">
+                  AI-native full-stack applications
+                </span>
+                , and backend systems. Skilled in{" "}
                 <span className="font-semibold text-accent">React</span>,{" "}
                 <span className="font-semibold text-accent">Next.js</span>,{" "}
                 <span className="font-semibold text-accent">Node.js</span>,{" "}
-                <span className="font-semibold text-accent">TypeScript</span>,
-                and <span className="font-semibold text-accent">Python</span>.
-                <br />
-                <br />
-                Experienced in developing{" "}
-                <span className="font-semibold text-accent">
-                  AI/LLM applications
-                </span>
-                ,{" "}
-                <span className="font-semibold text-accent">RAG pipelines</span>
-                , workflow automations, and cloud-native architectures with{" "}
-                <span className="font-semibold text-accent">
-                  AWS, Docker, PostgreSQL, Redis,
-                </span>{" "}
-                and{" "}
+                <span className="font-semibold text-accent">TypeScript</span>,{" "}
+                <span className="font-semibold text-accent">Python</span>,{" "}
+                <span className="font-semibold text-accent">AWS</span>,{" "}
+                <span className="font-semibold text-accent">Docker</span>,{" "}
                 <span className="font-semibold text-accent">Cloudflare R2</span>
-                . Passionate about building secure, high-performance products
-                that solve real-world problems and scale from prototype to
-                production.
+                , <span className="font-semibold text-accent">PostgreSQL</span>{" "}
+                and <span className="font-semibold text-accent">Redis</span>,
+                with a focus on building secure, high-performance,
+                production-ready applications.
               </div>
             </FadeUp>
           </AnimatePresence>
