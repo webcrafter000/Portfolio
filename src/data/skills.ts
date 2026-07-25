@@ -1,24 +1,24 @@
 import {
+  SiJest,
+  SiVitest,
+  SiChakraui,
+  SiMui,
+  SiGithub,
+  SiCypress,
   SiExpress,
   SiNextdotjs,
   SiFlask,
   SiFastapi,
   SiMysql,
   SiCloudflare,
-  SiAmazonaws,
   SiVercel,
   SiGithubactions,
   SiLinux,
   SiRedis,
   SiSupabase,
-  SiJest,
-  SiVitest,
-  SiPlaywright,
-  SiChakraui,
-  SiMui,
-  SiGithub,
-  SiCypress,
 } from "react-icons/si";
+
+import { FaAws } from "react-icons/fa";
 import {
   Bot,
   Cpu,
@@ -27,6 +27,7 @@ import {
   ShieldCheck,
   Network,
   Pencil,
+  Play,
 } from "lucide-react";
 
 import { FramerMotionIcon } from "@/components/icons";
@@ -196,7 +197,7 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
     skills: [
       {
         name: "AWS",
-        icon: SiAmazonaws,
+        icon: FaAws,
       },
       {
         name: "Docker",
@@ -270,7 +271,7 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
       },
       {
         name: "Playwright",
-        icon: SiPlaywright,
+        icon: Play,
       },
       {
         name: "Cypress",
