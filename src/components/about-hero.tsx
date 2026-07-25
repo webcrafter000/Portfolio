@@ -44,7 +44,7 @@ export default function AboutHero() {
               <Link href="/projects" className="underline underline-offset-4">
                 <span className="text-accent">projects</span>
               </Link>{" "}
-              highlighting my skills in React.js, Next.js, TypeScript, AI
+              highlighting my skills in React.js, Next.js, TypeScript,Python, AI
               Integration and web development.
             </p>
           </FadeUp>
@@ -55,12 +55,8 @@ export default function AboutHero() {
               </h2>
               <ul className="mt-4 list-disc pl-5 text-base font-medium text-zinc-900 dark:text-zinc-300 sm:text-lg">
                 <li>
-                  Built and pitched MVPs in 24–48 hours during hackathons,
-                  rapidly validating user flows.
-                </li>
-                <li>
-                  Solved 150+ LeetCode problems (85% medium/hard) with focus on
-                  algorithm efficiency.
+                  Solved 150+ LeetCode problems with focus on algorithm
+                  efficiency.
                 </li>
                 <li>
                   Published 5+ technical articles on GeeksforGeeks reaching

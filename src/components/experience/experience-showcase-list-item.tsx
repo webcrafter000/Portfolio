@@ -13,6 +13,7 @@ function ShowCaseLiIcon(props: ExperienceListIconProps) {
     offset: ["center end", "center center"],
     layoutEffect: false,
   });
+
   return (
     <figure className="absolute left-0 stroke-zinc-900">
       <svg width="75" height="75" viewBox="0 0 100 100">
@@ -23,9 +24,7 @@ function ShowCaseLiIcon(props: ExperienceListIconProps) {
           className="fill-none stroke-accent stroke-1"
         />
         <motion.circle
-          style={{
-            pathLength: scrollYProgress,
-          }}
+          style={{ pathLength: scrollYProgress }}
           cx="50"
           cy="27"
           r="20"
@@ -52,9 +51,11 @@ export default function ExperienceShowcaseListItem(
   props: ExperienceShowcaseListItemProps,
 ) {
   const ref = useRef(null);
+
   return (
     <li ref={ref} className="mx-auto mb-14 flex w-[60%] flex-col gap-1">
       <ShowCaseLiIcon iconRef={ref} />
+
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
@@ -78,12 +79,16 @@ export default function ExperienceShowcaseListItem(
             <span className="text-accent">@{props.organisation.name}</span>
           )}
         </h3>
+
         <span className="text-sm font-medium text-foreground xs:text-base">
           {props.date} | {props.location}
         </span>
-        <p className="text-sm font-medium text-muted-foreground xs:text-base">
-          {props.description}
-        </p>
+
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm font-medium text-muted-foreground xs:text-base">
+          {props.description.split("\n").map((item, index) => (
+            <li key={index}>{item.replace(/^•\s*/, "")}</li>
+          ))}
+        </ul>
       </motion.div>
     </li>
   );
