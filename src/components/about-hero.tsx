@@ -63,8 +63,8 @@ export default function AboutHero() {
                   2,000+ developers.
                 </li>
                 <li>
-                  Ranked in top 0.1% in Andhra Pradesh Higher Secondary Board
-                  examination.
+                  Built 5+ production-ready full-stack applications with source
+                  code available on GitHub.
                 </li>
               </ul>
             </div>
