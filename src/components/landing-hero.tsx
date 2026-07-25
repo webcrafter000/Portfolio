@@ -60,28 +60,21 @@ export default function LandingHero() {
                 <span className="font-semibold text-accent">Next.js</span>,{" "}
                 <span className="font-semibold text-accent">Node.js</span>,{" "}
                 <span className="font-semibold text-accent">TypeScript</span>,
-                and{" "}
-                <span className="font-semibold text-accent">Python</span>.
-
+                and <span className="font-semibold text-accent">Python</span>.
                 <br />
                 <br />
-
                 Experienced in developing{" "}
                 <span className="font-semibold text-accent">
                   AI/LLM applications
                 </span>
                 ,{" "}
-                <span className="font-semibold text-accent">
-                  RAG pipelines
-                </span>
+                <span className="font-semibold text-accent">RAG pipelines</span>
                 , workflow automations, and cloud-native architectures with{" "}
                 <span className="font-semibold text-accent">
                   AWS, Docker, PostgreSQL, Redis,
                 </span>{" "}
                 and{" "}
-                <span className="font-semibold text-accent">
-                  Cloudflare R2
-                </span>
+                <span className="font-semibold text-accent">Cloudflare R2</span>
                 . Passionate about building secure, high-performance products
                 that solve real-world problems and scale from prototype to
                 production.
