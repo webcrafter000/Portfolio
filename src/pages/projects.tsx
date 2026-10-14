@@ -40,7 +40,8 @@ export default function Projects() {
           </h1>
           <div className="my-2">
             <span className="text-sm text-muted-foreground">
-              A selection of personal projects exploring full-stack development and AI.
+              A selection of personal projects exploring full-stack development
+              and AI.
             </span>
           </div>
           <div className="mt-8 grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-2">
