@@ -27,6 +27,7 @@ import {
   Network,
   Pencil,
   Play,
+  Code,
 } from "lucide-react";
 
 import { FramerMotionIcon } from "@/components/icons";
@@ -52,6 +53,8 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
       { name: "TypeScript", icon: TypescriptSvg },
       { name: "Python", icon: PythonSvg },
       { name: "SQL", icon: SiMysql },
+      { name: "HTML", icon: Code },
+      { name: "CSS", icon: Code },
     ],
   },
   {
@@ -114,6 +117,7 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
     skills: [
       { name: "REST APIs", icon: Network },
       { name: "Microservices", icon: Workflow },
+      { name: "System Design", icon: Network },
       { name: "WebSockets", icon: Network },
       { name: "JWT", icon: ShieldCheck },
       { name: "OAuth 2.0", icon: ShieldCheck },
