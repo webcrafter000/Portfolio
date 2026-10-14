@@ -24,7 +24,7 @@ export default function ProjectCard(props: ProjectCardProps) {
         <span className="h-px flex-1 bg-accent/20" />
       </div>
       <h2 className="mt-4 text-lg font-bold text-foreground">{props.name}</h2>
-      <p className="mt-3 flex-1 text-sm leading-relaxed text-foreground/85 md:text-base">
+      <p className="text-foreground/85 mt-3 flex-1 text-sm leading-relaxed md:text-base">
         {props.description}
       </p>
       <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
