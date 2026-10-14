@@ -8,14 +8,14 @@ export default function Projects() {
   return (
     <>
       <NextSeo
-        title="Projects by Nalam Nagendra - Software Developer Portfolio"
-        description="Explore a collection of projects by Nalam Nagendra, a seasoned Software Developer. From innovative web applications to responsive interfaces, discover the depth and diversity of my work."
+        title="Side Projects by Nalam Nagendra - Software Developer Portfolio"
+        description="Explore side projects by Nalam Nagendra, including full-stack web applications and AI-powered tools."
         canonical={`${siteMetadata.siteUrl}/projects`}
         openGraph={{
           url: `${siteMetadata.siteUrl}/projects`,
-          title: "Discover Projects by Nalam Nagendra - Software Developer",
+          title: "Side Projects by Nalam Nagendra",
           description:
-            "Explore a showcase of projects crafted by Nalam Nagendra, a Software Developer. Witness the fusion of creativity and technology in web development.",
+            "Explore full-stack applications and AI-powered tools built by Nalam Nagendra.",
           images: [
             {
               url: `${siteMetadata.siteUrl}`,
@@ -25,25 +25,22 @@ export default function Projects() {
           siteName: siteMetadata.siteName,
           type: "website",
         }}
-        // twitter={{
-        //   cardType: "summary_large_image",
-        // }}
         additionalMetaTags={[
           {
             property: "keywords",
             content:
-              "Projects,Nagendra Portfolio, Software Developer, React Developer, Frontend Developer, Web Development, JavaScript, HTML, CSS, UI/UX, Web Applications, Responsive Design",
+              "Side Projects, Nagendra Portfolio, Software Developer, Full Stack Developer, AI Applications, Web Development",
           },
         ]}
       />
       <section className="mx-auto mb-40 mt-6 w-full gap-20 px-6 sm:mt-12 sm:px-14 md:px-20">
         <div className="mx-auto max-w-7xl">
           <h1 className="text-2xl font-semibold text-foreground md:text-4xl">
-            Projects
+            Side Projects
           </h1>
           <div className="my-2">
             <span className="text-sm text-muted-foreground">
-              Here are some of the projects I&apos;d like to share
+              A selection of personal projects exploring full-stack development and AI.
             </span>
           </div>
           <div className="mt-8 grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-2">
@@ -63,6 +60,7 @@ export default function Projects() {
               <a
                 href={`${siteMetadata.github}?tab=repositories`}
                 target="_blank"
+                rel="noreferrer"
                 className="font-semibold text-accent underline underline-offset-2 hover:text-accent/70"
               >
                 Github
