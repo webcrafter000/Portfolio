@@ -1,11 +1,9 @@
 import Head from "next/head";
-
 import { NextSeo } from "next-seo";
 
 import LandingHero from "@/components/landing-hero";
 import SkillsShowcase from "@/components/skills/skills-showcase";
-import ProjectShowcase from "@/components/projects/project-showcase";
-import { PROJECT_SHOWCASE } from "@/data/projects";
+import ProductionWorkShowcase from "@/components/production-work-showcase";
 import { SKILLS_DATA } from "@/data/skills";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 
@@ -13,31 +11,28 @@ export default function Home() {
   return (
     <>
       <NextSeo
-        title="Nalam Nagendra | Full Stack Engineer"
-        description="Explore the professional portfolio of Nalam Nagendra, a skilled Full Stack Engineer specializing in scalable distributed systems and AI-powered solutions. Discover innovative projects, expertise in modern web technologies, and a passion for creating seamless user experiences."
+        title="Nalam Nagendra | Full Stack Developer"
+        description="Nalam Nagendra is a full stack developer building production web applications, backend systems, and AI-powered workflows."
         canonical={siteMetadata.siteUrl}
         openGraph={{
           url: siteMetadata.siteUrl,
-          title: "Nalam Nagendra - Full Stack Engineer",
+          title: "Nalam Nagendra | Full Stack Developer",
           description:
-            "Dive into the world of web development with Nalam Nagendra. Discover a Full Stack Engineer showcasing cutting-edge projects and a commitment to crafting exceptional user interfaces.",
+            "Production experience across property technology, learning platforms, supply-chain systems, and AI-powered workflows.",
           images: [
             {
               url: `${siteMetadata.siteUrl}`,
-              alt: "Nalam Nagendra - Portfolio Image",
+              alt: "Nalam Nagendra portfolio",
             },
           ],
           siteName: siteMetadata.siteName,
           type: "website",
         }}
-        // twitter={{
-        //   cardType: "summary_large_image",
-        // }}
         additionalMetaTags={[
           {
             property: "keywords",
             content:
-              "React Developer, Software Developer, Frontend Developer, Web Developer, JavaScript, HTML, CSS, Portfolio, UI/UX, React.js, Frontend Development, Web Development, JavaScript Developer, Responsive Design",
+              "Full Stack Developer, React, Next.js, Node.js, TypeScript, Python, PostgreSQL, Redis, RAG, LangChain",
           },
         ]}
       />
@@ -50,8 +45,8 @@ export default function Home() {
         )}
       </Head>
       <LandingHero />
+      <ProductionWorkShowcase />
       <SkillsShowcase skills={SKILLS_DATA} />
-      <ProjectShowcase projects={PROJECT_SHOWCASE} />
     </>
   );
 }
