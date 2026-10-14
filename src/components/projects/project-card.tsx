@@ -26,7 +26,7 @@ export default function ProjectCard(props: ProjectCardProps) {
       <h2 className="mt-4 text-lg font-bold text-foreground dark:text-white">
         {props.name}
       </h2>
-      <p className="text-foreground/85 mt-3 flex-1 text-sm leading-relaxed md:text-base dark:text-white">
+      <p className="text-foreground/85 mt-3 flex-1 text-sm leading-relaxed dark:text-white md:text-base">
         {props.description}
       </p>
       <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
@@ -34,7 +34,7 @@ export default function ProjectCard(props: ProjectCardProps) {
           href={props.sourceCodeHref}
           target="_blank"
           rel="noreferrer"
-          className="flex items-center gap-1.5 text-foreground text-xs underline underline-offset-4 md:text-sm dark:text-white"
+          className="flex items-center gap-1.5 text-xs text-foreground underline underline-offset-4 dark:text-white md:text-sm"
         >
           <GithubIcon className="h-5 w-5" /> Source code
         </a>
@@ -43,7 +43,7 @@ export default function ProjectCard(props: ProjectCardProps) {
             href={props.liveWebsiteHref}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-1.5 text-foreground text-xs underline underline-offset-4 md:text-sm dark:text-white"
+            className="flex items-center gap-1.5 text-xs text-foreground underline underline-offset-4 dark:text-white md:text-sm"
           >
             <FiExternalLink className="h-4 w-4" /> Live demo
           </a>
