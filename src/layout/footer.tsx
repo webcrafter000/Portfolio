@@ -5,18 +5,15 @@ import { siteMetadata } from "@/data/siteMetaData.mjs";
 export default function Footer() {
   return (
     <footer className="flex w-full flex-col items-center gap-12 bg-transparent px-6 py-8 sm:gap-16 sm:px-14 md:px-20">
-      <div className="mx-auto flex w-full max-w-7xl flex-col gap-8 rounded-2xl bg-accent p-6 text-background sm:p-10 md:gap-10 lg:p-14">
+      <div className="mx-auto flex w-[90%] max-w-7xl flex-col gap-8 rounded-2xl bg-accent p-6 text-background sm:w-[75%] sm:p-10 md:w-[60%] md:gap-10 lg:p-14">
         <div className="text-center">
           <span className="inline-block rounded-full bg-background px-3 py-1 text-xs font-semibold uppercase text-accent md:text-sm">
             Get in touch
           </span>
         </div>
-        <a
-          href={`mailto:${siteMetadata.email}`}
-          className="mx-auto mb-2 block w-[60%] max-w-[18rem] text-center text-sm font-bold underline sm:text-base md:text-xl lg:text-2xl"
-        >
-          Reach out for opportunities or collaborations.
-        </a>
+        <p className="mx-auto mb-2 w-full text-center text-sm font-bold sm:text-base md:text-xl lg:text-2xl">
+          Reach out for project discussions or opportunities.
+        </p>
         <div className="flex justify-center">
           <ContactButton />
         </div>
