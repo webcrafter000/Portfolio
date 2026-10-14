@@ -9,11 +9,13 @@ export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
     date: "Sep 2025 – Present",
     location: "Remote",
     description:
-      "• Built a property insights and LMS platform with multi-source search across 25+ property data APIs, WhatsApp ingestion via state machines, and Stripe subscription management.\n" +
-      "• Designed a production-ready RAG chatbot with hybrid retrieval, tier-based access, real-time streaming, and automated quality testing, achieving sub-2s response latency.\n" +
-      "• Developed a full-featured LMS with video streaming, gamification (badges and leaderboards), and tiered course access, increasing student retention and monthly active users by 35%.\n" +
-      "• Optimized infrastructure using Cloudflare R2, PostgreSQL indexing, and Redis caching, reducing storage costs by 45% while maintaining 100% data accuracy.\n" +
-      "• Implemented CI/CD pipelines with GitHub Actions and end-to-end testing using Playwright, ensuring zero regressions across 50+ production deployments.",
+      "• Built property search, deal calculators, and comparable-property workflows across 25+ property data APIs.\n" +
+      "• Integrated Gemini-powered property photo assessment, reducing manual assessment time by 60%.\n" +
+      "• Connected Google Maps and geocoding workflows across 90,000+ property records.\n" +
+      "• Developed an LMS with video streaming, gamification, and Stripe subscription management, and automated Vimeo video workflows to remove manual uploads.\n" +
+      "• Built a production RAG chatbot with hybrid retrieval and streaming responses, keeping response latency under 2 seconds.\n" +
+      "• Optimized media storage and data access with Cloudflare R2, PostgreSQL indexing, and Redis, reducing storage costs by 45%.\n" +
+      "• Automated email workflows with Brevo, reducing manual operational effort by 90%, and added GitHub Actions and Playwright to the delivery workflow.",
   },
   {
     title: "Full Stack Developer (Remote)",
@@ -23,9 +25,11 @@ export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
     date: "Jan 2025 – Aug 2025",
     location: "Remote",
     description:
-      "• Built a QR-based supply chain platform that reduced manual tracking efforts by 45%, featuring real-time dashboards powered by WebSockets and Chart.js for operational monitoring.\n" +
-      "• Engineered a multi-tenant MongoDB architecture with JWT-based tenant routing, handling over 2,000 daily API requests across multiple tenants.\n" +
-      "• Integrated the Gemini API for predictive analytics, improving reporting accuracy from 75% to 92%, and developed a Telegram alert engine for real-time sensor notifications.\n" +
-      "• Optimized backend performance by 30% using Redis caching and RBAC while designing a local RAG pipeline with LangChain and FAISS for intelligent document querying.",
+      "• Built a QR-based supply-chain platform with real-time WebSocket dashboards and Chart.js, reducing manual tracking effort by 45%.\n" +
+      "• Developed a multi-tenant MongoDB backend with JWT-based access, handling 2,000+ API requests per day.\n" +
+      "• Integrated Gemini-powered analytics, improving reporting accuracy from 75% to 92%.\n" +
+      "• Built a Telegram alert engine for sensor notifications, improving incident response time by 60%.\n" +
+      "• Improved backend performance by 30% with Redis caching and role-based access control (RBAC).\n" +
+      "• Developed a local retrieval-augmented generation pipeline using LangChain and FAISS for document querying.",
   },
 ];
