@@ -25,6 +25,7 @@ import {
   Workflow,
   ShieldCheck,
   Network,
+  Pencil,
   Play,
 } from "lucide-react";
 
