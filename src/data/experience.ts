@@ -12,10 +12,10 @@ export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
       "• Built property search, deal calculators, and comparable-property workflows across 25+ property data APIs.\n" +
       "• Integrated Gemini-powered property photo assessment, reducing manual assessment time by 60%.\n" +
       "• Connected Google Maps and geocoding workflows across 90,000+ property records.\n" +
-      "• Developed an LMS with video streaming, gamification, and Stripe subscription management, and automated Vimeo video workflows to remove manual uploads.\n" +
-      "• Built a production RAG chatbot with hybrid retrieval and streaming responses, keeping response latency under 2 seconds.\n" +
+      "• Developed an LMS with video streaming, gamification, and Stripe subscription management, and automated Vimeo video workflows, eliminating 100% of manual content uploads.\n" +
+      "• Built a production RAG chatbot with hybrid retrieval and streaming responses, keeping response latency under 2 seconds and contributing to a 35% increase in retention and monthly active users.\n" +
       "• Optimized media storage and data access with Cloudflare R2, PostgreSQL indexing, and Redis, reducing storage costs by 45%.\n" +
-      "• Automated email workflows with Brevo, reducing manual operational effort by 90%, and added GitHub Actions and Playwright to the delivery workflow.",
+      "• Automated email workflows with Brevo, reducing manual operational effort by 90% across workflows on 7+ platforms, and added GitHub Actions and Playwright to the delivery workflow.",
   },
   {
     title: "Full Stack Developer (Remote)",
