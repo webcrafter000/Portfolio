@@ -134,7 +134,7 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
       { name: "Sentry", icon: ShieldCheck },
       { name: "PostHog", icon: Bot },
       { name: "n8n", icon: Workflow },
-      { name: "Zapier", icon: Plug },
+      { name: "Zapier", icon: Workflow },
     ],
   },
 ];
