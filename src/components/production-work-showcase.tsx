@@ -33,7 +33,9 @@ export default function ProductionWorkShowcase() {
                     {experience.title}
                   </p>
                 </div>
-                <p className="text-sm text-muted-foreground">{experience.date}</p>
+                <p className="text-sm text-muted-foreground">
+                  {experience.date}
+                </p>
               </div>
               <p className="mt-1 text-sm text-muted-foreground">
                 {experience.location}
