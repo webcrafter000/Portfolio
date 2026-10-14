@@ -13,7 +13,7 @@ export default function Footer() {
         </div>
         <a
           href={`mailto:${siteMetadata.email}`}
-          className="mx-auto mb-2 block w-full max-w-[18rem] text-center text-sm font-bold underline sm:text-base md:text-xl lg:text-2xl"
+          className="mx-auto mb-2 block w-[60%] max-w-[18rem] text-center text-sm font-bold underline sm:text-base md:text-xl lg:text-2xl"
         >
           Reach out for opportunities or collaborations.
         </a>
