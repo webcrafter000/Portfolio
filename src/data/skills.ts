@@ -26,7 +26,6 @@ import {
   ShieldCheck,
   Network,
   Pencil,
-  Play,
   Code,
 } from "lucide-react";
 
