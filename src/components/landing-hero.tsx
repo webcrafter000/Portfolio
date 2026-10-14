@@ -51,7 +51,7 @@ export default function LandingHero() {
               <div className="mt-8 max-w-4xl text-base font-semibold leading-relaxed text-zinc-900 dark:text-zinc-200 sm:text-lg md:text-xl">
                 Full Stack Engineer with{" "}
                 <span className="font-semibold text-accent">
-                  1.5+ years of experience
+                  1.8+ years of experience
                 </span>{" "}
                 building scalable web applications,{" "}
                 <span className="font-semibold text-accent">
