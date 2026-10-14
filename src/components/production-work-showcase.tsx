@@ -9,12 +9,11 @@ export default function ProductionWorkShowcase() {
             Professional experience
           </p>
           <h2 className="mt-3 text-3xl font-bold text-foreground sm:text-4xl">
-            Building software for real-world teams
+            Engineering scalable web experiences with AI
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
             Selected production work across property technology, learning
             platforms, supply-chain monitoring, and AI-powered workflows.
-            Project details are kept text-only.
           </p>
         </div>
 
