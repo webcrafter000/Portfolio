@@ -17,7 +17,6 @@ import {
   SiRedis,
   SiSupabase,
 } from "react-icons/si";
-
 import { FaAws } from "react-icons/fa";
 import {
   Bot,
@@ -26,30 +25,27 @@ import {
   Workflow,
   ShieldCheck,
   Network,
-  Pencil,
-  Play,
+  PanelsTopLeft,
+  Plug,
+  Search,
+  Server,
+  Activity,
+  Bug,
+  Gauge,
+  MessageSquare,
 } from "lucide-react";
 
 import { FramerMotionIcon } from "@/components/icons";
 import { type SkillsShowcaseProps } from "@/components/skills/skills-showcase";
 
-// Languages
-import HtmlSvg from "@/public/icons/html.svg";
-import CsssSvg from "@/public/icons/css.svg";
 import JavascriptSvg from "@/public/icons/javascript.svg";
 import TypescriptSvg from "@/public/icons/typescript.svg";
 import PythonSvg from "@/public/icons/python.svg";
-
-// Frameworks
 import ReactjsSvg from "@/public/icons/reactjs.svg";
 import TailwindcssSvg from "@/public/icons/tailwindcss.svg";
 import NodejsSvg from "@/public/icons/nodejs.svg";
-
-// Databases
 import MongoDBSvg from "@/public/icons/mongodb.svg";
 import PostgressSvg from "@/public/icons/postgresql.svg";
-
-// Tools
 import GitSvg from "@/public/icons/git.svg";
 import DockerSvg from "@/public/icons/docker.svg";
 import PostmanSvg from "@/public/icons/postman.svg";
@@ -58,225 +54,93 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
   {
     sectionName: "Languages",
     skills: [
-      {
-        name: "JavaScript",
-        icon: JavascriptSvg,
-      },
-      {
-        name: "TypeScript",
-        icon: TypescriptSvg,
-      },
-      {
-        name: "Python",
-        icon: PythonSvg,
-      },
-      {
-        name: "SQL",
-        icon: SiMysql,
-      },
-      {
-        name: "HTML",
-        icon: HtmlSvg,
-      },
-      {
-        name: "CSS",
-        icon: CsssSvg,
-      },
+      { name: "JavaScript", icon: JavascriptSvg },
+      { name: "TypeScript", icon: TypescriptSvg },
+      { name: "Python", icon: PythonSvg },
+      { name: "SQL", icon: SiMysql },
     ],
   },
   {
     sectionName: "Frameworks",
     skills: [
-      {
-        name: "React",
-        icon: ReactjsSvg,
-      },
-      {
-        name: "Next.js",
-        icon: SiNextdotjs,
-      },
-      {
-        name: "Node.js",
-        icon: NodejsSvg,
-      },
-      {
-        name: "Express.js",
-        icon: SiExpress,
-      },
-      {
-        name: "FastAPI",
-        icon: SiFastapi,
-      },
-      {
-        name: "Flask",
-        icon: SiFlask,
-      },
+      { name: "React", icon: ReactjsSvg },
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "Node.js", icon: NodejsSvg },
+      { name: "Express.js", icon: SiExpress },
+      { name: "Django", icon: Server },
+      { name: "FastAPI", icon: SiFastapi },
+      { name: "Flask", icon: SiFlask },
     ],
   },
   {
-    sectionName: "UI",
+    sectionName: "UI & Design",
     skills: [
-      {
-        name: "Tailwind CSS",
-        icon: TailwindcssSvg,
-      },
-      {
-        name: "Material UI",
-        icon: SiMui,
-      },
-      {
-        name: "Chakra UI",
-        icon: SiChakraui,
-      },
-      {
-        name: "Framer Motion",
-        icon: FramerMotionIcon,
-      },
+      { name: "Tailwind CSS", icon: TailwindcssSvg },
+      { name: "Material UI", icon: SiMui },
+      { name: "Chakra UI", icon: SiChakraui },
+      { name: "Framer Motion", icon: FramerMotionIcon },
+      { name: "Figma", icon: PanelsTopLeft },
     ],
   },
   {
     sectionName: "AI / LLM",
     skills: [
-      {
-        name: "RAG Pipelines",
-        icon: Cpu,
-      },
-      {
-        name: "LangChain",
-        icon: Bot,
-      },
-      {
-        name: "n8n",
-        icon: Workflow,
-      },
-      {
-        name: "Prompt Engineering",
-        icon: Pencil,
-      },
-      {
-        name: "LLM Integration",
-        icon: Bot,
-      },
-      {
-        name: "Automations",
-        icon: Workflow,
-      },
+      { name: "RAG Pipelines", icon: Cpu },
+      { name: "LangChain", icon: Bot },
+      { name: "LangGraph", icon: Workflow },
+      { name: "Vector Databases", icon: Database },
+      { name: "MCP", icon: Plug },
+      { name: "LLM Integration", icon: Bot },
     ],
   },
   {
     sectionName: "Databases",
     skills: [
-      {
-        name: "PostgreSQL",
-        icon: PostgressSvg,
-      },
-      {
-        name: "MySQL",
-        icon: SiMysql,
-      },
-      {
-        name: "MongoDB",
-        icon: MongoDBSvg,
-      },
-      {
-        name: "Redis",
-        icon: SiRedis,
-      },
-      {
-        name: "Drizzle ORM",
-        icon: Database,
-      },
-      {
-        name: "Supabase",
-        icon: SiSupabase,
-      },
+      { name: "PostgreSQL", icon: PostgressSvg },
+      { name: "MySQL", icon: SiMysql },
+      { name: "MongoDB", icon: MongoDBSvg },
+      { name: "Redis", icon: SiRedis },
+      { name: "Drizzle ORM", icon: Database },
+      { name: "Supabase", icon: SiSupabase },
     ],
   },
   {
     sectionName: "Cloud / DevOps",
     skills: [
-      {
-        name: "AWS",
-        icon: FaAws,
-      },
-      {
-        name: "Docker",
-        icon: DockerSvg,
-      },
-      {
-        name: "Cloudflare R2",
-        icon: SiCloudflare,
-      },
-      {
-        name: "GitHub Actions",
-        icon: SiGithubactions,
-      },
-      {
-        name: "Vercel",
-        icon: SiVercel,
-      },
-      {
-        name: "Linux",
-        icon: SiLinux,
-      },
+      { name: "AWS", icon: FaAws },
+      { name: "Docker", icon: DockerSvg },
+      { name: "Cloudflare R2", icon: SiCloudflare },
+      { name: "GitHub Actions", icon: SiGithubactions },
+      { name: "Vercel", icon: SiVercel },
+      { name: "Linux", icon: SiLinux },
     ],
   },
   {
-    sectionName: "Architecture",
+    sectionName: "APIs & Architecture",
     skills: [
-      {
-        name: "REST APIs",
-        icon: Network,
-      },
-      {
-        name: "Microservices",
-        icon: Workflow,
-      },
-      {
-        name: "State Machines",
-        icon: Workflow,
-      },
-      {
-        name: "RBAC",
-        icon: ShieldCheck,
-      },
-      {
-        name: "System Design",
-        icon: Database,
-      },
+      { name: "REST APIs", icon: Network },
+      { name: "Microservices", icon: Workflow },
+      { name: "WebSockets", icon: Activity },
+      { name: "JWT", icon: ShieldCheck },
+      { name: "OAuth 2.0", icon: ShieldCheck },
+      { name: "RBAC", icon: ShieldCheck },
     ],
   },
   {
     sectionName: "Tools & Testing",
     skills: [
-      {
-        name: "Git",
-        icon: GitSvg,
-      },
-      {
-        name: "GitHub",
-        icon: SiGithub,
-      },
-      {
-        name: "Postman",
-        icon: PostmanSvg,
-      },
-      {
-        name: "Jest",
-        icon: SiJest,
-      },
-      {
-        name: "Vitest",
-        icon: SiVitest,
-      },
-      {
-        name: "Playwright",
-        icon: Play,
-      },
-      {
-        name: "Cypress",
-        icon: SiCypress,
-      },
+      { name: "Git", icon: GitSvg },
+      { name: "GitHub", icon: SiGithub },
+      { name: "Postman", icon: PostmanSvg },
+      { name: "Jest", icon: SiJest },
+      { name: "Vitest", icon: SiVitest },
+      { name: "Playwright", icon: Search },
+      { name: "Cypress", icon: SiCypress },
+      { name: "k6", icon: Gauge },
+      { name: "Sentry", icon: Bug },
+      { name: "PostHog", icon: MessageSquare },
+      { name: "n8n", icon: Workflow },
+      { name: "Zapier", icon: Plug },
     ],
   },
 ];
