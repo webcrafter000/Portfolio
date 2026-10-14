@@ -23,10 +23,10 @@ export default function ProjectCard(props: ProjectCardProps) {
         <span className="text-sm font-semibold text-accent">SIDE PROJECT</span>
         <span className="h-px flex-1 bg-accent/20" />
       </div>
-      <h2 className="mt-4 text-lg font-bold text-foreground dark:text-zinc-50">
+      <h2 className="mt-4 text-lg font-bold text-foreground dark:text-white">
         {props.name}
       </h2>
-      <p className="mt-3 flex-1 text-sm leading-relaxed text-foreground/85 dark:text-zinc-200 md:text-base">
+      <p className="mt-3 flex-1 text-sm leading-relaxed text-foreground/85 dark:text-white md:text-base">
         {props.description}
       </p>
       <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
@@ -34,7 +34,7 @@ export default function ProjectCard(props: ProjectCardProps) {
           href={props.sourceCodeHref}
           target="_blank"
           rel="noreferrer"
-          className="flex items-center gap-1.5 text-xs text-foreground underline underline-offset-4 dark:text-zinc-100 md:text-sm"
+          className="flex items-center gap-1.5 text-xs text-foreground underline underline-offset-4 dark:text-white md:text-sm"
         >
           <GithubIcon className="h-5 w-5" /> Source code
         </a>
@@ -43,7 +43,7 @@ export default function ProjectCard(props: ProjectCardProps) {
             href={props.liveWebsiteHref}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-1.5 text-xs text-foreground underline underline-offset-4 dark:text-zinc-100 md:text-sm"
+            className="flex items-center gap-1.5 text-xs text-foreground underline underline-offset-4 dark:text-white md:text-sm"
           >
             <FiExternalLink className="h-4 w-4" /> Live demo
           </a>
